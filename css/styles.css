@@ -100,6 +100,169 @@ select:-webkit-autofill:focus {
   flex-grow: 1;
 }
 
+
+/* Button */
+.button {
+  display: inline-block;
+  padding: 8px 22px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 2;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.button:active {
+  opacity: .6;
+}
+
+.button--red {
+  border-color: var(--red);
+  background-color: var(--red);
+  color: #fff;
+}
+
+.button--red:hover {
+  background-color: #fff;
+  color: var(--red);
+}
+
+.button--site-header {
+  padding: 10px 31px;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 1.5px;
+}
+
+.button--blue {
+  border-color: var(--blue);
+  background-color: var(--blue);
+  color: #fff;
+}
+
+.button--blue:hover {
+  background-color: #fff;
+  color: var(--blue);
+}
+
+.button--grey {
+  border-color: #f7f7f7;
+  background-color: #f7f7f7;
+  color: var(--text-color);
+}
+
+.button--grey:hover {
+  border-color: #5B6074;
+  background-color: #fff;
+  color: var(--text-color);
+}
+
+.button--block {
+  display: block;
+  width: 100%;
+}
+
+
+/* Logo */
+.logo {
+  display: block;
+  text-decoration: none;
+  transform: opacity .3s ease;
+}
+
+.logo:hover {
+  opacity: .8;
+}
+
+.logo:active {
+  opacity: .8;
+}
+
+.logo__img {
+  display: block;
+  width: 149px;
+  height: 25px;
+  object-fit: contain;
+}
+
+
+/* Sitenav */
+.sitenav {
+  font-size: 13px;
+  line-height: 17px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.sitenav__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sitenav__item:not(:last-child) {
+  margin-right: 48px;
+}
+
+.sitenav__link {
+  display: block;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color .3s ease,
+              opacity .3s ease;
+}
+
+.sitenav__link:hover {
+  color: var(--red);
+}
+
+.sitenav__link:active {
+  opacity: .6;
+}
+
+
+/* Site Header */
+.site-header {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  text-transform: uppercase;
+}
+
+.site-header-container {
+  display: flex;
+  align-items: center;
+}
+
+.site-header-logo {
+  margin-right: auto;
+}
+
+.site-header-sitenav {
+  margin-right: 48px;
+}
+
+.sitenav {
+
+}
+
+.sitenav__list {
+
+}
+
+.sitenav__item {
+
+}
+
+.sitenav__link {
+
+}
+
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
