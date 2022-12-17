@@ -1,3 +1,13 @@
+/* Custom props */
+:root {
+  --blue: #5267df;
+  --red: #fa5959;
+  --text-color: #242a45;
+  --text-color-75: #242a45bf; 
+  --text-color-50: #242a4580; 
+}
+
+
 /* Fonts */
 @import url(https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap);
