@@ -226,6 +226,36 @@ select:-webkit-autofill:focus {
 }
 
 
+/* Section */
+.section {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.section__info {
+  width: 100%;
+  max-width: 540px;
+  margin-right: auto;
+  margin-bottom: 48px;
+  margin-left: auto;
+  text-align: center;
+}
+
+.section__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 32px;
+  line-height: 52px;
+  color: var(--text-color);
+}
+
+.section__description {
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+
 /* Site Header */
 .site-header {
   padding-top: 48px;
