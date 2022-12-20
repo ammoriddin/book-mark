@@ -317,7 +317,7 @@ select:-webkit-autofill:focus {
   letter-spacing: 0.5px;
 }
 
-.tabs__item-active .tabs__link {
+.tabs__item--active .tabs__link {
   color: var(--text-color);
   border-bottom-color: var(--red);
 }
