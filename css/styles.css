@@ -259,13 +259,25 @@ select:-webkit-autofill:focus {
 /* Feature-Tab-Panel */
 .feature-tab-panel {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
 .feature-tab-panel__img {
   margin-right: 30px;
   object-fit: contain;
+}
+
+.feature-tab-panel__img--bookmark-manager {
+  margin-right: 125px; 
+}
+
+.feature-tab-panel__img--simple {
+  margin-right: 110px; 
+}
+
+.feature-tab-panel__img--sharing {
+  margin-right: 145px; 
 }
 
 .feature-tab-panel__info {
@@ -326,7 +338,7 @@ select:-webkit-autofill:focus {
   color: var(--red);
 }
 
-.tabs__panels {
+.tabpanels {
   padding-top: 75px;
   padding-bottom: 165px;
   background-image: url("../img/blue-bg.svg");
@@ -334,11 +346,11 @@ select:-webkit-autofill:focus {
   background-position: calc(50% - 580px) 156px;
 }
 
-.tabs__panel {
+.tabpanels__item {
   display: none;
 }
 
-.tabs__panel--active {
+.tabpanels__item--active {
   display: block;
 }
 
