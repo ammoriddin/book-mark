@@ -2,6 +2,9 @@ const elsTabItem = document.querySelectorAll(".tabs__item");
 const elsTabPanel = document.querySelectorAll(".tabpanels__item");
 const elsTabLink = document.querySelectorAll(".js-tab-link");
 
+const elsAccardionItemToggler = document.querySelectorAll(".accardion__item-toggler");  
+const elsAccardionItem = document.querySelectorAll(".accardion__item");  
+
 function deactivateTabItems () {
   elsTabItem.forEach(elTabsItem => {
     elTabsItem.classList.remove("tabs__item--active");
@@ -14,6 +17,11 @@ function deactivateTabPanels () {
   });
 };
 
+function closeAccardionItems() {
+  elsAccardionItem.forEach(elAccardionItem => {
+    elAccardionItem.classList.remove("accardion__item--open")
+  });
+}
 
 elsTabLink.forEach(elTabLink => {
   elTabLink.addEventListener("click", function(evt) {
@@ -33,4 +41,11 @@ elsTabLink.forEach(elTabLink => {
     const elTargetPanel = document.querySelector(`${elTabLink.dataset.tabTarget}`);
     elTargetPanel.classList.add("tabpanels__item--active")
   });
+});
+
+elsAccardionItemToggler.forEach(elAccardionItemToggler => {
+  elAccardionItemToggler.addEventListener("click", function() {
+    closeAccardionItems();
+    elAccardionItemToggler.closest(".accardion__item").classList.add('accardion__item--open')
+  })
 });
