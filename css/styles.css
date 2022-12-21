@@ -1,6 +1,7 @@
 /* Custom props */
 :root {
   --blue: #5267df;
+  --outline-color: #5267df;
   --red: #fa5959;
   --text-color: #242a45;
   --text-color-75: #242a45bf; 
@@ -48,7 +49,7 @@ img {
 
 /* Outline styles */
 *:focus {
-  outline: 2px dashed var(--blue);
+  outline: 2px dashed var(--outline-color);
   outline-offset: 5px;
 }
 
@@ -639,3 +640,103 @@ select:-webkit-autofill:focus {
   width: 100%;
   margin-bottom: 54px;
 }
+
+
+/* Subscription */
+.subscription {
+  --outline-color: #fff;
+
+  padding-top: 58px;
+  padding-bottom: 74px;
+  background-color: var(--blue);
+  color: #fff;
+}
+
+.subscription__inner {
+  max-width: 446px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.subscription__count-text {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.subscription__heading {
+  margin-top: 0;
+  margin-bottom: 36px;
+  font-size: 32px;
+  font-weight: 550;
+  line-height: 40px;
+}
+
+.subscription__form {
+  display: flex;
+
+}
+
+.subscription__field-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  margin-right: 16px;
+}
+
+.subscription__field {
+  position: relative;
+  z-index: 1;
+  display: block;
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+  line-height: 28px;
+  padding: 8px 20px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+.subscription__field:not(:focus):not(:placeholder-shown):invalid {
+  padding-right: 52px;
+  border-color: var(--red);
+  background-image: url("../img/error-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+}
+
+
+.subscription__error {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: calc(100% - 4px);
+  display: none;
+  width: 100%;
+  padding: 8px 12px;
+  background-color: var(--red);
+  color: #fff;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 12px;
+  text-align: left;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.subscription__field:not(:focus):not(:placeholder-shown):invalid ~ .subscription__error {
+  display: block;
+}
+
+.subscription__field:focus + .subscripton__error, 
+.subscription__field:valid + .subscripton__error, 
+.subscription__field:placeholder-shown + .subscripton__error {
+  display: none;
+} 
