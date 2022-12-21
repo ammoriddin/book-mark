@@ -451,6 +451,10 @@ select:-webkit-autofill:focus {
   margin: 0;
 }
 
+.accardion__item-tetx:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 
 /* Socials */
 .socials {
